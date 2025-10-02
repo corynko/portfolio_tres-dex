@@ -1,9 +1,5 @@
-import { Cart } from '../components/Cart/Cart';
+// import { Cart } from '../components/Cart/Cart';
 
 export function CartPage() {
-  return (
-    <>
-      <Cart />
-    </>
-  );
+  return <>{/* <Cart /> */}</>;
 }

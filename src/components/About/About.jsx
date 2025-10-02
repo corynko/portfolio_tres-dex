@@ -11,7 +11,6 @@ import classes from './About.module.css';
 export function About() {
   const { colorScheme } = useMantineColorScheme();
   const isDark = colorScheme === 'dark';
-  const isInvert = colorScheme !== 'dark';
   const navColor = usePrimaryColor(9, 3);
   const invertColor = usePrimaryColor(1, 9);
 

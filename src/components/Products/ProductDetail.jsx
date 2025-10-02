@@ -17,8 +17,8 @@ import {
 import lightBg from '../../assets/png/EKP_LW_1.jpg';
 import darkBg from '../../assets/png/EKP_S-C-12.jpg';
 import { useBackground } from '../../contexts/backgroundContext';
-import { useCart } from '../../contexts/cartContext';
-import { useCartModal } from '../../contexts/cartModalContext';
+// import { useCart } from '../../contexts/cartContext';
+// import { useCartModal } from '../../contexts/cartModalContext';
 import { useContrastColor } from '../../theme/useContrastColor';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
 import { ProductCardArray } from './ProductCardArray';
@@ -35,8 +35,8 @@ export function ProductDetail() {
   const theme = useMantineTheme();
 
   const [donation, setDonation] = useState(5);
-  const { addToCart } = useCart();
-  const { openCart } = useCartModal();
+  // const { addToCart } = useCart();
+  // const { openCart } = useCartModal();
 
   useEffect(() => {
     setBackgrounds({
@@ -65,8 +65,8 @@ export function ProductDetail() {
             <Button
               className={classes.detailButton}
               onClick={() => {
-                addToCart(product, donation);
-                openCart();
+                // addToCart(product, donation);
+                // openCart();
               }}
               fullWidth
               mt="md"

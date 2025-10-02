@@ -26,13 +26,13 @@ export function Welcome() {
   return (
     <>
       <div className={classes.content}>
-        <div className={classes.progPedals}>
+        <div className={classes.headline}>
           <Text className={classes.title} variant="gradient" component="span">
-            progressive
+            ethan
           </Text>
 
-          <Text className={classes.title2} component="span" c={'lightest'}>
-            pedals
+          <Text className={classes.title2} component="span">
+            kotel
           </Text>
         </div>
         <motion.div
@@ -41,7 +41,7 @@ export function Welcome() {
           transition={{ duration: 1.5, ease: 'easeInOut', staggerChildren: 0.3 }}
           className={cx(classes.navButtons, { [classes.dark]: isDark })}
         >
-          {['about', 'products', 'contact'].map((label) => (
+          {['who i am', 'what i do', 'contact me'].map((label) => (
             <Link
               key={label}
               to={`/${label}`}
@@ -59,8 +59,7 @@ export function Welcome() {
           ))}
         </motion.div>
         <div className={classes.slogan}>
-          <Title c={navColor}>progressive tools for progressive players</Title>
-          <Title c={navColor}>and a case study in radical marketing</Title>
+          <Title c={navColor}>denver-based digital professional</Title>
         </div>
       </div>
     </>

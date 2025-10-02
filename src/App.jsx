@@ -3,8 +3,6 @@ import '@mantine/core/styles.css';
 import { MantineProvider, Modal } from '@mantine/core';
 import { Navbar } from './components/NavBar/navBar';
 import { BackgroundProvider } from './contexts/backgroundContext';
-import { CartProvider } from './contexts/cartContext';
-import { CartModalProvider } from './contexts/cartModalContext';
 
 import './styles.css';
 
@@ -16,12 +14,8 @@ export default function App() {
   return (
     <MantineProvider theme={theme}>
       <BackgroundProvider>
-        <CartModalProvider>
-          <CartProvider>
-            <Navbar />
-            <RouterProvider router={Router} />
-          </CartProvider>
-        </CartModalProvider>
+        <Navbar />
+        <RouterProvider router={Router} />
       </BackgroundProvider>
     </MantineProvider>
   );
