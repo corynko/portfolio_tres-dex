@@ -6,28 +6,37 @@ import { Text, Title, useMantineColorScheme } from '@mantine/core';
 import darkBg from '../../assets/png/EKP_CIR-60Dark.jpg';
 import lightBg from '../../assets/png/EKP_CIR-69Light.jpg';
 import { useBackground } from '../../contexts/backgroundContext';
+import { useDailyBackground } from '../../contexts/dailyBackgroundContext';
+import lightBgArray from '../../theme/lightBgArray';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
   const { setBackgrounds } = useBackground();
+  const { light: lightBg, dark: darkBg } = useDailyBackground();
 
   useEffect(() => {
     setBackgrounds({
       light: lightBg,
       dark: darkBg,
     });
-  }, [setBackgrounds]);
+  }, [setBackgrounds, lightBg, darkBg]);
 
   const { colorScheme } = useMantineColorScheme();
   const isDark = colorScheme === 'dark';
   const navColor = usePrimaryColor(9, 3);
 
+  const buttonArray = [
+    { label: 'who i am', link: 'about' },
+    { label: 'what i do', link: 'projects' },
+    { label: 'contact me', link: 'contact' },
+  ];
+
   return (
     <>
       <div className={classes.content}>
         <div className={classes.headline}>
-          <Text className={classes.title} variant="gradient" component="span">
+          <Text className={classes.title} variant="gradient" component="TextPath">
             ethan
           </Text>
 
@@ -41,10 +50,10 @@ export function Welcome() {
           transition={{ duration: 1.5, ease: 'easeInOut', staggerChildren: 0.3 }}
           className={cx(classes.navButtons, { [classes.dark]: isDark })}
         >
-          {['who i am', 'what i do', 'contact me'].map((label) => (
+          {buttonArray.map((i) => (
             <Link
-              key={label}
-              to={`/${label}`}
+              key={i.label}
+              to={`/${i.link}`}
               style={{ textDecoration: 'none' }}
               onMouseDown={(e) => {
                 e.preventDefault();
@@ -54,7 +63,7 @@ export function Welcome() {
                 [classes.dark]: isDark,
               })}
             >
-              {label}
+              {i.label}
             </Link>
           ))}
         </motion.div>

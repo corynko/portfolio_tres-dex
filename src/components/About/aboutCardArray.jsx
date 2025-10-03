@@ -1,13 +1,7 @@
 export const AboutCardArray = [
   {
-    title: '"progressive tools for progressive players"',
-    text: `This is more than just a marketing gimmick. In an age of rising authoritarianism,
-      the dissolution of democracy, and significant emboldening of antisemites and white
-      supremacists, it is our belief that sides need to be chosen. Progressive Pedals was
-      born in an effort to motivate the type of social change that musicians have been at
-      the forefront of for generations. A significant portion of every sale will be
-      donated to various progressive causes, from the Trevor Project and Planned
-      Parenthood to the ACLU.`,
+    title: 'hello, my name is ethan',
+    text: `I am, at my core, a creative, and I enjoy creating in all forms. When I'm not bringing my unique perspective to digital marketing and business consultation, I'm making music, writing, taking photos, and wood working.`,
   },
   {
     title: "our pedals are not for you if you don't believe these truths:",

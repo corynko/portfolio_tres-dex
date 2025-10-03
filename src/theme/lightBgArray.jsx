@@ -1,10 +1,10 @@
-import lightBg1 from '../assets/png/lightBg1.jpg';
-import lightBg2 from '../assets/png/lightBg2.jpeg';
-import lightBg3 from '../assets/png/lightBg3.png';
-import lightBg4 from '../assets/png/lightBg4.png';
-import lightBg5 from '../assets/png/lightBg5.png';
-import lightBg6 from '../assets/png/lightBg6.jpeg';
-import lightBg7 from '../assets/png/lightBg7.jpg';
+import lightBg1 from '../assets/png/lightBg/lightBg1.jpg';
+import lightBg2 from '../assets/png/lightBg/lightBg2.jpeg';
+import lightBg3 from '../assets/png/lightBg/lightBg3.png';
+import lightBg4 from '../assets/png/lightBg/lightBg4.png';
+import lightBg5 from '../assets/png/lightBg/lightBg5.jpg';
+import lightBg6 from '../assets/png/lightBg/lightBg6.jpeg';
+import lightBg7 from '../assets/png/lightBg/lightBg7.jpg';
 
 const lightBgArray = [
   { day: 'monday', background: lightBg1 },

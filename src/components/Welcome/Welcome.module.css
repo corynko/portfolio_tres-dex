@@ -2,8 +2,10 @@
 .title {
   color: light-dark(var(--darkest), var(--lightest));
   font-family: 'Gotham Thin';
-  font-size: rem(100px);
+  font-size: rem(105px);
   letter-spacing: rem(-2px);
+
+  -webkit-text-stroke: 0.1px #444444;
 
   @media (max-width: 900px) {
     font-size: rem(85px);
@@ -34,7 +36,7 @@
 .title2 {
   font-family: 'Gotham Light';
   color: light-dark(var(--mantine-color-ekBlack-8), var(--mantine-color-ekBlack-1));
-  font-size: rem(100px);
+  font-size: rem(105px);
   /* font-weight: 900; */
   letter-spacing: rem(-2px);
 
@@ -74,23 +76,25 @@
   font-family: 'Gotham Book';
   font-size: 1.2rem;
   padding: 0.75rem 1.5rem;
-  background: #00000033;
+  background: #00000066;
   border: 3px outset var(--mantine-color-ekBlue-7);
   color: var(--mantine-color-ekBlue-4);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   border-radius: 14px;
+  scale: 105%;
 }
 
 .navButton:hover {
   border-color: var(--mantine-color-ekCeladon-4);
   color: var(--mantine-color-ekCeladon-2);
-  background: #00000066;
+  background: #00000088;
   transition: all 0.5s ease-in-out;
+  scale: 107%;
 }
 
 .navButton:active {
-  scale: 90%;
+  scale: 100%;
   transition: all 0.5s ease-in-out;
 }
 
