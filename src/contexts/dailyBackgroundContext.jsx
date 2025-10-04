@@ -9,11 +9,11 @@ import darkBg6 from '../assets/png/darkBg/darkBg6.jpg';
 import darkBg7 from '../assets/png/darkBg/darkBg7.jpg';
 // Import your background images
 import lightBg1 from '../assets/png/lightBg/lightBg1.jpg';
-import lightBg2 from '../assets/png/lightBg/lightBg2.jpeg';
-import lightBg3 from '../assets/png/lightBg/lightBg3.png';
-import lightBg4 from '../assets/png/lightBg/lightBg4.png';
+import lightBg2 from '../assets/png/lightBg/lightBg2.jpg';
+import lightBg3 from '../assets/png/lightBg/lightBg3.jpg';
+import lightBg4 from '../assets/png/lightBg/lightBg4.jpg';
 import lightBg5 from '../assets/png/lightBg/lightBg5.jpg';
-import lightBg6 from '../assets/png/lightBg/lightBg6.jpeg';
+import lightBg6 from '../assets/png/lightBg/lightBg6.jpg';
 import lightBg7 from '../assets/png/lightBg/lightBg7.jpg';
 
 // Background arrays - index 0 = Monday, 6 = Sunday

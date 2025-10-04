@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Github } from 'feather-icons-react';
 import {
   ActionIcon,
   Anchor,
@@ -14,7 +15,7 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
-import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
+import { ColorSchemeToggle } from './ColorSchemeToggle';
 import LogoDraw from './logoDraw';
 import classes from './NavBar.module.css';
 
@@ -26,6 +27,12 @@ export function Navbar() {
   const links = ['about', 'products', 'contact'];
 
   const navColor = usePrimaryColor(8, 1);
+
+  const buttonArray = [
+    { label: 'who i am', link: 'about' },
+    { label: 'what i do', link: 'projects' },
+    { label: 'contact me', link: 'contact' },
+  ];
 
   return (
     <Container fluid className={classes.navbarContainer}>
@@ -40,7 +47,7 @@ export function Navbar() {
 
         {/* Desktop Links */}
         <div className={classes.desktopLinks}>
-          {links.map((link) => {
+          {buttonArray.map((i) => {
             const [isHovered, setIsHovered] = useState(false);
 
             const linkColor = isHovered
@@ -51,15 +58,15 @@ export function Navbar() {
 
             return (
               <Anchor
-                key={link}
-                href={`/${link.toLowerCase()}`}
+                key={i.label}
+                href={`/${i.link}`}
                 size="md"
                 className={classes.navLink}
                 style={{ color: linkColor, transition: 'all 0.3s ease-in-out' }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                {link}
+                {i.label}
               </Anchor>
             );
           })}
@@ -69,6 +76,15 @@ export function Navbar() {
             isDark={isDark}
             toggleColorScheme={toggleColorScheme}
           />
+
+          <Anchor target="_blank" href="https://github.com/corynko/portfolio_tres-dex/tree/main">
+            <Github
+              color={navColor}
+              style={{ alignContent: 'center', justifyContent: 'center', paddingTop: '3px' }}
+              viewBox="0 0 50 50"
+              size="65"
+            />
+          </Anchor>
         </div>
 
         {/* Mobile Burger */}
@@ -92,17 +108,17 @@ export function Navbar() {
         className={classes.mobileDrawer}
       >
         <Flex direction="column" gap="md">
-          {links.map((link) => (
+          {buttonArray.map((i) => (
             <Anchor
-              key={link}
-              href={`/${link.toLowerCase()}`}
+              key={i.label}
+              href={`/${i.link}`}
               size="md"
               className={classes.navLink}
               style={{ color: navColor, transition: 'all 0.3s ease-in-out' }}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              {link}
+              {i.label}
             </Anchor>
           ))}
 
@@ -111,6 +127,15 @@ export function Navbar() {
             isDark={isDark}
             toggleColorScheme={toggleColorScheme}
           />
+
+          <Anchor target="_blank" href="https://github.com/corynko/portfolio_tres-dex/tree/main">
+            <Github
+              color={navColor}
+              style={{ alignContent: 'center', justifyContent: 'center', paddingTop: '3px' }}
+              viewBox="0 0 50 50"
+              size="65"
+            />
+          </Anchor>
         </Flex>
       </Drawer>
     </Container>
