@@ -1,12 +1,10 @@
-# Progressive Pedals
-
-progressive tools for progressive players
+# Ethan Kotel
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
 
-This is the online repository for progpedals.com, creating progressive audio tools for guitarists who aren't trying to destroy democracy and eliminate civil rights
+the home of ethan kotel's current portfolio repository, hosted at ethankotel.dev
 
 # Table of Contents
 
@@ -25,11 +23,11 @@ This is the online repository for progpedals.com, creating progressive audio too
 
 ## Usage
 
-This website is open source, but still in active development. feel free to use it to learn more about interesting uses for react and mantine. Please note, however, that all photos and other assets included within this repo are the sole and exclusive intellectual property of Ethan Kotel and Ethan Kotel Photography, and may not be re-used without express written permission. Feel free to ask though!
+This website is open source, but still in active development. feel free to use it to learn more about interesting design applications for react and mantine, or if you feel like giving feedback. Please note, however, that all photos and other assets included within this repo are the sole and exclusive intellectual property of Ethan Kotel and Ethan Kotel Photography, and may not be re-used without express written permission. Feel free to ask though!
 
 ## License
 
-    Copyright 2023 corynko
+    Copyright 1994-2025 corynko
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -49,6 +47,6 @@ This project was built by @corynko. While I welcome feedback, this project is no
 
 ## Questions
 
-Please don't hesitate to reach out to me at info@progpedals.com or open an issue on my repository (@corynko) with any questions or bugs.
+Please don't hesitate to reach out to me at info@ethankotel.com or open an issue on my repository (@corynko) with any questions or bugs.
 
 || _readme made using @corynko's readme generator_ ||
