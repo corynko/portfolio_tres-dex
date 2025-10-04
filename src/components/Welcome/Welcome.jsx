@@ -3,11 +3,8 @@ import cx from 'clsx'; // for conditional classNames
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Text, Title, useMantineColorScheme } from '@mantine/core';
-import darkBg from '../../assets/png/EKP_CIR-60Dark.jpg';
-import lightBg from '../../assets/png/EKP_CIR-69Light.jpg';
 import { useBackground } from '../../contexts/backgroundContext';
 import { useDailyBackground } from '../../contexts/dailyBackgroundContext';
-import lightBgArray from '../../theme/lightBgArray';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
 import classes from './Welcome.module.css';
 
@@ -36,7 +33,7 @@ export function Welcome() {
     <>
       <div className={classes.content}>
         <div className={classes.headline}>
-          <Text className={classes.title} variant="gradient" component="TextPath">
+          <Text className={classes.title} variant="gradient" component="span">
             ethan
           </Text>
 
