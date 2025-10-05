@@ -59,9 +59,14 @@ export function Products() {
     <div className={classes.content}>
       <motion.div variants={headerVariants} initial="start" animate="finish">
         <Title className={classes.titleLocation}>
-          <Text className={classes.title} component="span">
-            products
-          </Text>
+          <div className={classes.projectTitleDiv}>
+            <Text className={classes.smolTitle} component="span">
+              selected
+            </Text>
+            <Text className={classes.title} component="span">
+              projects
+            </Text>
+          </div>
         </Title>
       </motion.div>
       <Container className={classes.paperContainer}>

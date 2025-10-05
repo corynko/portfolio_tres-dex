@@ -74,7 +74,7 @@ export function Contact() {
               ||
             </Text>
             <Text className={classes.title} component="span">
-              us
+              me
             </Text>
           </Title>
         </motion.div>
