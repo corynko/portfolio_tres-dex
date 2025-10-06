@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Container, Paper, Text, Title, useMantineColorScheme } from '@mantine/core';
-import lightBg from '../../assets/png/EKP_RATL-46.jpg';
-import darkBg from '../../assets/png/EKP_RATL-84.jpg';
+import darkBg from '../../assets/png/contactDark.jpg';
+import lightBg from '../../assets/png/contactLight.jpg';
 import { useBackground } from '../../contexts/backgroundContext';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
 import ContactForm from './ContactForm';

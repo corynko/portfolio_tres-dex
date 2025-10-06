@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Container, Paper, Text, Title, useMantineColorScheme } from '@mantine/core';
-import lightBg from '../../assets/png/EKP_CIR-67.jpg';
-import darkBg from '../../assets/png/EKP_SGV-32.jpg';
+import darkBg from '../../assets/png/aboutDark.jpg';
+import lightBg from '../../assets/png/aboutLight.png';
 import { useBackground } from '../../contexts/backgroundContext';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
 import { AboutCardArray } from './aboutCardArray';

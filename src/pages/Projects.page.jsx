@@ -1,26 +1,26 @@
 import { Helmet } from '@dr.pogodin/react-helmet';
 import { useMantineTheme } from '@mantine/core';
-import { Products } from '../components/Projects/Projects';
+import { Projects } from '../components/Projects/Projects';
 
 export function ProductsPage() {
   const theme = useMantineTheme();
   return (
     <>
       <Helmet>
-        <title>Contact | Progressive Pedals</title>
-        <meta name="description" content="The latest small-batch builds from Progressive Pedals" />
+        <title>Projects | Ethan Kotel</title>
+        <meta name="description" content="Selected projects by Ethan Kotel" />
         <meta
           name="keywords"
-          content="fuzz pedal, custom guitar pedals, contact, boutique stompboxes"
+          content="ethan kotel, projects, portfolio, samples, marketing, copywriting, website design"
         />
-        <meta property="og:title" content="Products | Progressive Pedals" />
-        <meta property="og:description" content="Boutique, small-batch pedals available now." />
+        <meta property="og:title" content="Products | Ethan Kotel" />
+        <meta property="og:description" content="Selected projects by Ethan Kotel" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://progpedals.com/products" />
-        <meta name="twitter:title" content="Products | Progressive Pedals" />
-        <meta name="twitter:description" content="Progressive tools for progressive musicians." />
+        <meta property="og:url" content="https://ethankotel.dev/projects" />
+        <meta name="twitter:title" content="Products | Ethan Kotel" />
+        <meta name="twitter:description" content="Selected projects by Ethan Kotel" />
       </Helmet>
-      <Products theme={theme} />
+      <Projects theme={theme} />
     </>
   );
 }

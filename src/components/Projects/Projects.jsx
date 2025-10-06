@@ -13,14 +13,14 @@ import {
   Title,
   useMantineColorScheme,
 } from '@mantine/core';
-import darkBg from '../../assets/png/EKP_F-E-15.jpg';
-import lightBg from '../../assets/png/EKP_L-W-37.jpg';
+import darkBg from '../../assets/png/projects/projectsDark.jpg';
+import lightBg from '../../assets/png/projects/projectsLight.jpg';
 import { useBackground } from '../../contexts/backgroundContext';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
 import { ProjectCardArray } from './ProjectCardArray';
 import classes from './Projects.module.css';
 
-export function Products() {
+export function Projects() {
   const navColor = usePrimaryColor(9, 3);
   const { colorScheme } = useMantineColorScheme();
   const isDark = colorScheme === 'dark';
