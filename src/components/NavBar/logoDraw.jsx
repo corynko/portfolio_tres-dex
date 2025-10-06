@@ -144,9 +144,9 @@ export default function LogoDraw() {
 
   return (
     <motion.svg
-      width="100px"
-      height="100px"
-      viewBox="0 0 775 775"
+      width="75px"
+      height="75px"
+      viewBox="0 0 800 800"
       xmlns="http://www.w3.org/2000/svg"
       className={classes.logo}
       variants={containerVariants}

@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import cx from 'clsx';
 import { motion } from 'motion/react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
+  Anchor,
   Button,
   Card,
   Container,
@@ -15,8 +17,8 @@ import darkBg from '../../assets/png/EKP_F-E-15.jpg';
 import lightBg from '../../assets/png/EKP_L-W-37.jpg';
 import { useBackground } from '../../contexts/backgroundContext';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
-import { ProductCardArray } from './ProductCardArray';
-import classes from './Products.module.css';
+import { ProjectCardArray } from './ProjectCardArray';
+import classes from './Projects.module.css';
 
 export function Products() {
   const navColor = usePrimaryColor(9, 3);
@@ -70,15 +72,15 @@ export function Products() {
         </Title>
       </motion.div>
       <Container className={classes.paperContainer}>
-        <Paper className={classes.comingSoon}>
+        {/* <Paper className={classes.comingSoon}>
           <Text c={navColor} className={classes.comingSoonH1}>
             first drop coming soon
           </Text>
           <Text c={navColor} className={classes.comingSoonH3}>
             stay tuned
           </Text>
-        </Paper>
-        {ProductCardArray.map((product) => (
+        </Paper> */}
+        {ProjectCardArray.map((product) => (
           <motion.div
             key={product.slug}
             variants={cardVariants}
@@ -86,16 +88,16 @@ export function Products() {
             animate="finish"
             whileHover={{ scale: 1.02 }}
           >
-            <Card className={classes.productCard} withBorder padding="md" shadow="md">
+            <Card className={classes.projectCard} withBorder padding="md" shadow="md">
               <Card.Section>
                 <Image
                   src={isDark ? product.imageDark : product.imageLight}
                   alt={product.title}
-                  className={classes.productCardImg}
+                  className={classes.projectCardImg}
                 />
               </Card.Section>
 
-              <div className={classes.productCardContent}>
+              <div className={classes.projectCardContent}>
                 <Title order={4} className={classes.paperHeadline} c={navColor}>
                   {product.title}
                 </Title>
@@ -105,14 +107,25 @@ export function Products() {
                 <Text className={classes.paperText} c={navColor}>
                   {product.price}
                 </Text>
-                <Button
-                  variant="light"
-                  color={navColor}
-                  mt="auto"
-                  onClick={() => navigate(`/products/${product.slug}`)}
+                <Link
+                  target="_blank"
+                  to="https://u.pcloud.link/publink/show?code=XZ6D5n5ZwVLnVbCNT24wUxrMQHVx3ffTFsyX"
+                  className={cx(
+                    classes.projectDownloadButton,
+                    'hvr-glow',
+                    classes.hvr_underline_from_center,
+                    {
+                      [classes.dark]: isDark,
+                    }
+                  )}
+                  style={{ textDecoration: 'none', textAlign: 'center' }}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.blur();
+                  }}
                 >
-                  Learn More
-                </Button>
+                  Download
+                </Link>
               </div>
             </Card>
           </motion.div>

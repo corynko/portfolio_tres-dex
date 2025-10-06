@@ -96,7 +96,7 @@ export function Contact() {
             >
               <Paper className={classes.contactPaper}>
                 <Title className={classes.paperHeadline} ta={'center'} c={navColor}>
-                  custom projects? comments? questions? hate mail? all answered here.
+                  custom projects? comments? questions? all answered here.
                 </Title>
               </Paper>
               <ContactForm />

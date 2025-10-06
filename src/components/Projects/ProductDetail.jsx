@@ -21,12 +21,12 @@ import { useBackground } from '../../contexts/backgroundContext';
 // import { useCartModal } from '../../contexts/cartModalContext';
 import { useContrastColor } from '../../theme/useContrastColor';
 import { usePrimaryColor } from '../../theme/usePrimaryColor';
-import { ProductCardArray } from './ProductCardArray';
+import { ProjectCardArray } from './ProjectCardArray';
 import classes from './ProductDetail.module.css';
 
-export function ProductDetail() {
+export function ProjectDetail() {
   const { slug } = useParams();
-  const product = ProductCardArray.find((p) => p.slug === slug);
+  const product = ProjectCardArray.find((p) => p.slug === slug);
   const { colorScheme } = useMantineColorScheme();
   const isDark = colorScheme === 'dark';
   const { setBackgrounds } = useBackground();

@@ -7,16 +7,13 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Progressive Pedals</title>
-        <meta
-          name="description"
-          content="The home of Progressive Pedals, Boutique Stompboxes for Social Change"
-        />
+        <title>Ethan Kotel</title>
+        <meta name="description" content="The home of Ethan Kotel's online portfolio." />
         <meta
           name="keywords"
-          content="fuzz pedal, custom guitar pedals, contact, boutique stompboxes"
+          content="ethan kotel, digital marketing, denver marketing, music, photography, development"
         />
-        <meta property="og:title" content="Progressive Pedals" />
+        <meta property="og:title" content="Ethan Kotel" />
         <meta property="og:description" content="Get in touch for custom projects or questions." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://progpedals.com" />

@@ -24,6 +24,7 @@
   font-family: 'Gotham Light Italic';
   font-size: rem(60px);
   letter-spacing: rem(-2px);
+  margin-left: 10px;
 
   @media (max-width: 500px) {
     font-size: rem(40px);
@@ -80,7 +81,7 @@
   padding: 1rem;
 }
 
-.productCard {
+.projectCard {
   max-width: 320px;
   width: 100%;
   display: flex;
@@ -96,11 +97,11 @@
   height: 600px;
 }
 
-.productCard:hover {
+.projectCard:hover {
   transform: scale(1.03);
 }
 
-.productCardImg {
+.projectCardImg {
   width: 100%;
   max-height: 200px;
   object-fit: contain;
@@ -108,12 +109,18 @@
   background-color: light-dark(#ffffff, #000000);
 }
 
-.productCardContent {
+.projectCardContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
   gap: 0.75rem;
+}
+
+.projectCardButton {
+  flex-grow: 1;
+  display: flex;
+  /* color: #000000; */
 }
 
 .aboutPaper {
@@ -126,6 +133,81 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.projectDownloadButton {
+  font-family: 'Gotham Book';
+  font-size: 1.3rem;
+  padding: 0.75rem 1.5rem;
+  background: #00000066;
+  border: 3px outset var(--mantine-color-ekBlue-7);
+  color: var(--mantine-color-ekBlue-4);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 14px;
+  scale: 105%;
+}
+
+.projectDownloadButton:hover {
+  border-color: var(--mantine-color-ekCeladon-4);
+  color: var(--mantine-color-ekCeladon-2);
+  background: #00000088;
+  transition: all 0.5s ease-in-out;
+  scale: 107%;
+}
+
+.projectDownloadButton:active {
+  scale: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.dark .projectDownloadButton {
+  border-color: var(--mantine-color-ekRed-3);
+  color: var(--mantine-color-ekRed-4);
+  transition: all 0.5s ease-in-out;
+}
+
+.dark .projectDownloadButton:hover {
+  border-color: var(--mantine-color-ekCeladon-3);
+  color: var(--mantine-color-ekCeladon-2);
+  transition: all 0.5s ease-in-out;
+}
+
+.hvr_underline_from_center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr_underline_from_center:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: var(--mantine-color-ekCeladon-5);
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.dark .hvr_underline_from_center:before {
+  background: var(--mantine-color-ekCeladon-3);
+}
+
+.hvr_underline_from_center:hover:before,
+.hvr_underline_from_center:focus:before,
+.hvr_underline_from_center:active:before {
+  left: 0;
+  right: 0;
 }
 
 .paperHeadline {
