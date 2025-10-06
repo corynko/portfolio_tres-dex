@@ -16,9 +16,12 @@ export function HomePage() {
         <meta property="og:title" content="Ethan Kotel" />
         <meta property="og:description" content="Get in touch for custom projects or questions." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://progpedals.com" />
-        <meta name="twitter:title" content="Progressive Pedals" />
-        <meta name="twitter:description" content="Progressive tools for progressive musicians." />
+        <meta property="og:url" content="https://ethankotel.dev" />
+        <meta name="twitter:title" content="EthanKotel.dev" />
+        <meta
+          name="twitter:description"
+          content="Online home of Ethan Kotel, Digital Professional"
+        />
       </Helmet>
       <Welcome theme={theme} />
     </>

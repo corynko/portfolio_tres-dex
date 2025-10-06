@@ -8,17 +8,14 @@ export function AboutPage() {
     <>
       <Helmet>
         <title>Contact | Progressive Pedals</title>
-        <meta name="description" content="Progressive Pedals - Who Are We, What Do We Do" />
-        <meta
-          name="keywords"
-          content="fuzz pedal, custom guitar pedals, about, boutique stompboxes"
-        />
-        <meta property="og:title" content="About | Progressive Pedals" />
-        <meta property="og:description" content="Progressive Pedals - Our Story, Our Mission" />
+        <meta name="description" content="Ethan Kotel - About Me" />
+        <meta name="keywords" content="ethan kotel, about me, about, information, bio" />
+        <meta property="og:title" content="About | Ethan Kotel" />
+        <meta property="og:description" content="Ethan Kotel - About Me" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://progpedals.com/about" />
-        <meta name="twitter:title" content="About | Progressive Pedals" />
-        <meta name="twitter:description" content="Progressive tools for progressive musicians." />
+        <meta property="og:url" content="https://ethankotel.dev/about" />
+        <meta name="twitter:title" content="About | Ethan Kotel" />
+        <meta name="twitter:description" content="Ethan Kotel - About Me" />
       </Helmet>
       <About theme={theme} />
     </>

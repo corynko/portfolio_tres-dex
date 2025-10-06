@@ -1,5 +1,5 @@
 import { Helmet } from '@dr.pogodin/react-helmet';
-import { ProjectDetail } from '../components/Projects/ProductDetail';
+// import { ProjectDetail } from '../components/Projects/ProductDetail';
 import { ProjectCardArray } from '../components/Projects/ProjectCardArray';
 
 export function ProductDetailPage() {
@@ -22,7 +22,7 @@ export function ProductDetailPage() {
         <meta name="twitter:title" content={ProjectCardArray.title} />
         <meta name="twitter:description" content={ProjectCardArray.description} />
       </Helmet>
-      <ProductDetail />
+      {/* <ProductDetail /> */}
     </>
   );
 }

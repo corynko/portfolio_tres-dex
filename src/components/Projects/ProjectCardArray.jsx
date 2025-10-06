@@ -1,16 +1,9 @@
-import acabImgLight from '../../assets/pedals/1312/1312_black_wordless.jpg';
-import acabImgDark from '../../assets/pedals/1312/1312_red_wordless.jpg';
-import fRWDark from '../../assets/pedals/fuckRW/fuckRW_black.jpg';
-import fRWLight from '../../assets/pedals/fuckRW/fuckRW_white.jpg';
-import harveyImgDark from '../../assets/pedals/harvey/harveyBlack@3x.png';
-import harveyImgLight from '../../assets/pedals/harvey/harveyWhite@3x.png';
 import astrodash from '../../assets/png/projects/astrodash.png';
 import cWScrnShot from '../../assets/png/projects/CW_ScrnShot.png';
 import ekDev from '../../assets/png/projects/EK_dev.png';
 import evergroove from '../../assets/png/projects/evergroove.png';
 import insight from '../../assets/png/projects/insight.png';
 import oPaP from '../../assets/png/projects/opap.png';
-import classes from './ProductDetail.module.css';
 
 export const ProjectCardArray = [
   {
