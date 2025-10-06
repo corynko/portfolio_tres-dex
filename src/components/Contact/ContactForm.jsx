@@ -110,7 +110,7 @@ export default function ContactForm() {
         <form ref={formRef} onSubmit={handleSubmit(sendEmail)}>
           <TextInput
             label="Name"
-            placeholder="Your name"
+            placeholder="Your Name"
             {...register('name', { required: 'name is required' })}
             error={errors.name?.message}
             className={classes.input}
@@ -158,7 +158,7 @@ export default function ContactForm() {
 
           <TextInput
             label="Message"
-            placeholder="You're tacky and I hate you."
+            placeholder="Making my way downtown, walking fast, faces pass, and I'm homebound."
             {...register('message', { required: `come now, don't be shy` })}
             error={errors.message?.message}
             className={classes.input}

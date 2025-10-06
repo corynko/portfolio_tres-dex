@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import cx from 'clsx'; // for conditional classNames
+import cx from 'clsx';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Text, Title, useMantineColorScheme } from '@mantine/core';

@@ -1,6 +1,6 @@
 import { Helmet } from '@dr.pogodin/react-helmet';
 import { useMantineTheme } from '@mantine/core';
-import { Products } from '../components/Products/Products';
+import { Products } from '../components/Projects/Projects';
 
 export function ProductsPage() {
   const theme = useMantineTheme();
