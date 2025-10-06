@@ -128,7 +128,7 @@ export function Navbar() {
             toggleColorScheme={toggleColorScheme}
           />
 
-          <Anchor target="_blank" href="https://github.com/corynko/portfolio_tres-dex/tree/main">
+          <Anchor target="_blank" href="https://github.com/corynko/portfolio_tres-dux">
             <Github
               color={navColor}
               style={{ alignContent: 'center', justifyContent: 'center', paddingTop: '3px' }}

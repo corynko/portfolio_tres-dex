@@ -4,89 +4,114 @@ import fRWDark from '../../assets/pedals/fuckRW/fuckRW_black.jpg';
 import fRWLight from '../../assets/pedals/fuckRW/fuckRW_white.jpg';
 import harveyImgDark from '../../assets/pedals/harvey/harveyBlack@3x.png';
 import harveyImgLight from '../../assets/pedals/harvey/harveyWhite@3x.png';
+import astrodash from '../../assets/png/projects/astrodash.png';
 import cWScrnShot from '../../assets/png/projects/CW_ScrnShot.png';
+import ekDev from '../../assets/png/projects/EK_dev.png';
+import evergroove from '../../assets/png/projects/evergroove.png';
+import insight from '../../assets/png/projects/insight.png';
+import oPaP from '../../assets/png/projects/opap.png';
 import classes from './ProductDetail.module.css';
 
 export const ProjectCardArray = [
   {
-    slug: 'Copywriting Portfolio',
-    title: `Copywriting Potfolio`,
+    slug: 'Copywriting Samples',
+    title: `Copywriting Samples`,
     description: (
       <>
-        Ethan Kotel's Copywriting Portfolio, containing website examples, emails, and blog articles
-        written for inbound and outbound marketing purposes.
+        Samples from Ethan Kotel's Copywriting Portfolio, containing website examples, emails, and
+        blog articles written for inbound and outbound marketing purposes.
       </>
     ),
+    buttonText: 'Download',
     // price: 'pay what you want, minimum $120',
-    imageLight: cWScrnShot,
-    imageDark: cWScrnShot,
-    longText: (
+    image: cWScrnShot,
+    link: 'https://u.pcloud.link/publink/show?code=XZ6D5n5ZwVLnVbCNT24wUxrMQHVx3ffTFsyX',
+    target: '_blank',
+  },
+  {
+    slug: 'This Site',
+    title: `EthanKotel.dev`,
+    description: (
       <>
-        <span style={{ fontFamily: 'Gotham Medium' }}>f.RW</span> is a fuzz modeled on one of the
-        most famous boxes of all time, with several mods to capture one of its most famous user's
-        tonal palette. Four gain stages powered by USA-made silicon transistors join two,
-        symmetrical, germanium diode clipping stages for plenty of gain tempered with a sweet,
-        singing high end. The added "(breathe)" knob interacts heavily with the tone knob to allow
-        granular control over the response of both the high and low-mids, letting you dial in
-        anything from the rolled off compression of{' '}
-        <span style={{ fontFamily: 'Gotham Light Italic' }}>Echoes</span> to the grit-forward
-        harshness of <span style={{ fontFamily: 'Gotham Light Italic' }}>Dogs</span>. f.RW is
-        available for Pay What You Want, minimum $120 -{' '}
-        <span style={{ fontFamily: 'Gotham Medium' }}>
-          every dollar above the minimum will be donated to the{' '}
-          <a
-            className={classes.detailA}
-            style={{ fontFamily: 'Gotham Black' }}
-            target="_blank"
-            href="https://jwa.org/"
-          >
-            Jewish Women's Archive
-          </a>
-          , dedicated to documenting and sharing the stories of Jewish women's contributions to
-          progressive causes throughout history.
-        </span>{' '}
-        f(ck).RW - just because your bassist is a cunt, doesn't mean you have to be.
+        This site is open source! Coded by me using React and Mantine in JavaScript, HTML, and CSS,
+        this site stands as an example of my eye for design and love of smooth user experiences.
       </>
     ),
-    li1: (
+    buttonText: 'GitHub',
+    // price: 'pay what you want, minimum $120',
+    image: ekDev,
+    link: 'https://github.com/corynko/portfolio_tres-dux',
+    target: '_blank',
+  },
+  {
+    slug: 'Of Pens and Poems',
+    title: `Of Pens and Poems (.com)`,
+    description: (
       <>
-        <div className={classes.detail1312Li}>
-          point-to-point hand soldered, hand assembled, and hand painted
-        </div>
+        Still in development, oPaP is a site for reviews of fountain pens, inks, papers, and for
+        sharing poetry. It is also an experiment in shoving as much functionality as possible into a
+        front-end-only site.
       </>
     ),
-    li2: (
+    buttonText: 'Live Site',
+    // price: 'pay what you want, minimum $120',
+    image: oPaP,
+    link: 'https://ofpensandpoems.com',
+    target: '_blank',
+    secondButton: true,
+    secondLink: 'https://github.com/corynko/ofpoemsandpens',
+    secondTarget: '_blank',
+    secondButtonText: 'GitHub',
+  },
+  {
+    slug: 'Evergroove',
+    title: `Evergroove Studio`,
+    description: (
       <>
-        <div className={classes.detail1312Li}>
-          all pedals are tested for durability and expected functionality
-        </div>
+        Evergroove's website was designed and written by me (with some content revisions since my
+        time there). One of Colorado's pre-eminent recording studios.
       </>
     ),
-    li3: (
+    buttonText: 'Live Site',
+    // price: 'pay what you want, minimum $120',
+    image: evergroove,
+    link: 'https://evergroove.com',
+    target: '_blank',
+  },
+  {
+    slug: 'InSight Consultation',
+    title: `In Sight Consultation`,
+    description: (
       <>
-        <div className={classes.detail1312Li}>
-          built with high quality components including tested and <br />
-          matched transistors, oversized capacitors, and metal film resistors
-        </div>
+        Designed, built, and written by me, In Sight Consultation is a Denver-local provider of
+        resources and education for parents to help navigate the challenges of raising gifted and
+        neurodivergent children.
       </>
     ),
-    li4: (
+    buttonText: 'Live Site',
+    // price: 'pay what you want, minimum $120',
+    image: insight,
+    link: 'https://insightconsultation.com/',
+    target: '_blank',
+  },
+
+  {
+    slug: 'astroDash',
+    title: `astroDash (.space)`,
+    description: (
       <>
-        <div className={classes.detail1312Li}>limited to 10, individually numbered pedals</div>
+        A data aggregator for planning astrophotography shoots using purpose-collected APIs.
+        Currently on hold as more API's switch to high-base-price models. Built in React.
       </>
     ),
-    li5: (
-      <>
-        <div className={classes.detail1312Li}>
-          benefits the documenting and sharing of stories of Jewish women and gender-expansive
-          peoples via the JWA
-        </div>
-      </>
-    ),
-    minimumPrice: 120,
-    charity: {
-      name: `Jewish Women's Archive`,
-      url: 'https://jwa.org/',
-    },
+    buttonText: 'Live Site',
+    // price: 'pay what you want, minimum $120',
+    image: astrodash,
+    link: 'https://astrodash.space/',
+    target: '_blank',
+    secondButton: true,
+    secondLink: 'https://github.com/corynko/astrodash',
+    secondTarget: '_blank',
+    secondButtonText: 'GitHub',
   },
 ];

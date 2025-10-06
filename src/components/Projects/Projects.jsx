@@ -80,9 +80,9 @@ export function Products() {
             stay tuned
           </Text>
         </Paper> */}
-        {ProjectCardArray.map((product) => (
+        {ProjectCardArray.map((project) => (
           <motion.div
-            key={product.slug}
+            key={project.slug}
             variants={cardVariants}
             initial="start"
             animate="finish"
@@ -90,26 +90,22 @@ export function Products() {
           >
             <Card className={classes.projectCard} withBorder padding="md" shadow="md">
               <Card.Section>
-                <Image
-                  src={isDark ? product.imageDark : product.imageLight}
-                  alt={product.title}
-                  className={classes.projectCardImg}
-                />
+                <Image src={project.image} alt={project.title} className={classes.projectCardImg} />
               </Card.Section>
 
               <div className={classes.projectCardContent}>
                 <Title order={4} className={classes.paperHeadline} c={navColor}>
-                  {product.title}
+                  {project.title}
                 </Title>
                 <Text className={classes.paperText} c={navColor}>
-                  {product.description}
+                  {project.description}
                 </Text>
                 <Text className={classes.paperText} c={navColor}>
-                  {product.price}
+                  {project.price}
                 </Text>
                 <Link
-                  target="_blank"
-                  to="https://u.pcloud.link/publink/show?code=XZ6D5n5ZwVLnVbCNT24wUxrMQHVx3ffTFsyX"
+                  target={project.target}
+                  to={project.link}
                   className={cx(
                     classes.projectDownloadButton,
                     'hvr-glow',
@@ -124,8 +120,29 @@ export function Products() {
                     e.currentTarget.blur();
                   }}
                 >
-                  Download
+                  {project.buttonText}
                 </Link>
+                {project.secondButton && (
+                  <Link
+                    target={project.secondTarget}
+                    to={project.secondLink}
+                    className={cx(
+                      classes.projectDownloadButton,
+                      'hvr-glow',
+                      classes.hvr_underline_from_center,
+                      {
+                        [classes.dark]: isDark,
+                      }
+                    )}
+                    style={{ textDecoration: 'none', textAlign: 'center' }}
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      e.currentTarget.blur();
+                    }}
+                  >
+                    {project.secondButtonText}
+                  </Link>
+                )}
               </div>
             </Card>
           </motion.div>
